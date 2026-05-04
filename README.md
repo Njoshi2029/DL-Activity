@@ -1,11 +1,10 @@
-.
-
 📈 LSTM Stock Price Prediction (Tesla Dataset)
 📌 Project Overview
 
 This project demonstrates the use of Long Short-Term Memory (LSTM) networks for predicting stock prices using deep learning.
 
 The model is trained on historical Tesla stock price data and learns temporal patterns to predict future closing prices. This project highlights how Recurrent Neural Networks (RNNs) can be applied to real-world financial forecasting.
+.
 
 🎯 Objective
 Analyze historical Tesla stock price data
@@ -22,14 +21,16 @@ Visualize actual vs predicted results
 https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv
 Features Used:
 Close Price (primary feature used for prediction)
-🛠️ Technologies & Libraries
+
+Technologies & Libraries
 Python 🐍
 NumPy
 Pandas
 Matplotlib
 Scikit-learn
 TensorFlow / Keras
-⚙️ Project Workflow
+
+Project Workflow
 1. Data Collection
 Loaded Tesla dataset from online source
 2. Exploratory Data Analysis (EDA)
@@ -41,6 +42,7 @@ Created sequences of 60 days for time series prediction
 Split dataset:
 80% Training
 20% Testing
+
 4. Model Architecture
 Sequential Deep Learning Model:
 LSTM Layer (50 units, return_sequences=True)
@@ -55,6 +57,7 @@ Loss Function: Mean Squared Error
 5. Model Training
 Batch Size: 32
 Epochs: 10
+
 6. Prediction
 Prepared test dataset
 Generated predictions using trained model
